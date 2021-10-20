@@ -114,3 +114,60 @@
 // GOOD LUCK �
 
 /***SWITCH */
+
+const day = "monday";
+
+switch (day) {
+  case "monday":
+    console.log("today is monday");
+
+    break;
+  case "tuesday":
+    console.log("today is tuesday");
+
+    break;
+  case "wednesday":
+    console.log("today is wednesday");
+
+    break;
+
+  case "thursday":
+    console.log("today is thursday");
+
+    break;
+
+  case "friday":
+    console.log("today is friday");
+
+    break;
+
+  case "saturday":
+    console.log("today is saturday");
+
+    break;
+
+  case "sunday":
+    console.log("today is sunday");
+
+    break;
+
+  default:
+    console.log("not a valid day");
+    break;
+}
+
+if (day === "monday") {
+  console.log("monday");
+} else if (day === `tuesday`) {
+  console.log("tuesday");
+} else if (day === `wednesday` || day === `thursday`) {
+  console.log(`its wednesday or thursday`);
+} else if (day === `friday`) {
+  console.log(`its  friday`);
+} else if (day === `saturday`) {
+  console.log(`its saturday `);
+} else if (day === `sunday`) {
+  console.log(`its sunday `);
+} else {
+  console.log(`its not a day of the week`);
+}
