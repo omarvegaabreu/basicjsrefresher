@@ -178,12 +178,12 @@
 // 300. If the value is different, the tip is 20%.
 // Your tasks:
 // 1. Calculate the tip, depending on the bill value. Create a variable called 'tip' for
-const bill = 301;
-const tip = bill >= 50 && bill >= 300 ? bill * 0.15 : bill * 0.2;
-const total = bill + tip;
-console.log(`the bill is ${bill}`);
-console.log(`the tip is ${tip} ${bill >= 50 && bill >= 300 ? `%15` : `%20`} `);
-console.log(`the total is ${total}  `);
+// const bill = 301;
+// const tip = bill >= 50 && bill >= 300 ? bill * 0.15 : bill * 0.2;
+// const total = bill + tip;
+// console.log(`the bill is ${bill}`);
+// console.log(`the tip is ${tip} ${bill >= 50 && bill >= 300 ? `%15` : `%20`} `);
+// console.log(`the total is ${total}  `);
 
 // this. It's not allowed to use an if/else statement � (If it's easier for you, you can
 // start with an if/else statement, and then try to convert it to a ternary
