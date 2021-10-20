@@ -115,59 +115,85 @@
 
 /***SWITCH */
 
-const day = "monday";
+// const day = "monday";
 
-switch (day) {
-  case "monday":
-    console.log("today is monday");
+// switch (day) {
+//   case "monday":
+//     console.log("today is monday");
 
-    break;
-  case "tuesday":
-    console.log("today is tuesday");
+//     break;
+//   case "tuesday":
+//     console.log("today is tuesday");
 
-    break;
-  case "wednesday":
-    console.log("today is wednesday");
+//     break;
+//   case "wednesday":
+//     console.log("today is wednesday");
 
-    break;
+//     break;
 
-  case "thursday":
-    console.log("today is thursday");
+//   case "thursday":
+//     console.log("today is thursday");
 
-    break;
+//     break;
 
-  case "friday":
-    console.log("today is friday");
+//   case "friday":
+//     console.log("today is friday");
 
-    break;
+//     break;
 
-  case "saturday":
-    console.log("today is saturday");
+//   case "saturday":
+//     console.log("today is saturday");
 
-    break;
+//     break;
 
-  case "sunday":
-    console.log("today is sunday");
+//   case "sunday":
+//     console.log("today is sunday");
 
-    break;
+//     break;
 
-  default:
-    console.log("not a valid day");
-    break;
-}
+//   default:
+//     console.log("not a valid day");
+//     break;
+// }
 
-if (day === "monday") {
-  console.log("monday");
-} else if (day === `tuesday`) {
-  console.log("tuesday");
-} else if (day === `wednesday` || day === `thursday`) {
-  console.log(`its wednesday or thursday`);
-} else if (day === `friday`) {
-  console.log(`its  friday`);
-} else if (day === `saturday`) {
-  console.log(`its saturday `);
-} else if (day === `sunday`) {
-  console.log(`its sunday `);
-} else {
-  console.log(`its not a day of the week`);
-}
+// if (day === "monday") {
+//   console.log("monday");
+// } else if (day === `tuesday`) {
+//   console.log("tuesday");
+// } else if (day === `wednesday` || day === `thursday`) {
+//   console.log(`its wednesday or thursday`);
+// } else if (day === `friday`) {
+//   console.log(`its  friday`);
+// } else if (day === `saturday`) {
+//   console.log(`its saturday `);
+// } else if (day === `sunday`) {
+//   console.log(`its sunday `);
+// } else {
+//   console.log(`its not a day of the week`);
+// }
+
+// Coding Challenge #4
+// Steven wants to build a very simple tip calculator for whenever he goes eating in a
+// restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and
+// 300. If the value is different, the tip is 20%.
+// Your tasks:
+// 1. Calculate the tip, depending on the bill value. Create a variable called 'tip' for
+const bill = 301;
+const tip = bill >= 50 && bill >= 300 ? bill * 0.15 : bill * 0.2;
+const total = bill + tip;
+console.log(`the bill is ${bill}`);
+console.log(`the tip is ${tip} ${bill >= 50 && bill >= 300 ? `%15` : `%20`} `);
+console.log(`the total is ${total}  `);
+
+// this. It's not allowed to use an if/else statement � (If it's easier for you, you can
+// start with an if/else statement, and then try to convert it to a ternary
+// operator!)
+// 2. Print a string to the console containing the bill value, the tip, and the final value
+// (bill + tip). Example: “The bill was 275, the tip was 41.25, and the total value
+// 316.25”
+// Test data:
+// § Data 1: Test for bill values 275, 40 and 430
+// Hints:
+// § To calculate 20% of a value, simply multiply it by 20/100 = 0.2
+// § Value X is between 50 and 300, if it's >= 50 && <= 300 �
+// GOOD LUCK
