@@ -50,8 +50,6 @@ console.log(scoredArray);
 console.log(index, playerName);
 
 console.log("************************************************************");
-console.log("************************************************************");
-console.log("************************************************************");
 
 for (const [index, playerName] of game.scored.entries()) {
   scorers = { player: playerName, goals: +index };
@@ -63,6 +61,11 @@ for (const [key, value] of scoredArray) {
   const scorers = { player: value, goals: key };
 
   console.log(` ${scorers.player}: ${scorers.goals}`);
+}
+
+for (const [team, odds] of oddObject) {
+  const teamName = team === "x" ? "draw" : game[team];
+  console.log(`odds of victory ${teamName} are ${odds}`);
 }
 
 // for (const [keys, { team1, x, team2 }] of entries) {
